@@ -1,0 +1,158 @@
+// Variables
+$timbreSombre : #003c66;
+$timbreClair : #9ed7ff;
+$timbrePrincipal : #29a4fd;
+$white : white;
+$font : 'Poppins';
+$padding : 10px;
+$height : 32px;
+$weight: $height;
+$margin: 10px;
+$font1 : 'Poppins';
+$font2 : 'Afacad Flux';
+$dim : 20px;
+
+//Imbrications (Nested)
+
+body 
+{
+    font: 100% $font2;
+}
+
+// NavBar.tsx
+.Header 
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    background-color:darken($color: $timbreClair, $amount: 0);
+    border-radius: $margin + 10 ;
+    height: $height * 3 + 10;
+
+    &-img 
+    {
+        height: $height + 100;
+    }
+}
+
+    .Links
+    {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+
+        &-a 
+        {
+            text-decoration: none;
+            color: $timbreSombre;
+            margin: 0 $margin+30 0 0;
+            font-size: $margin + 7;
+        }
+    }
+
+    .annexes 
+    {
+
+        display: flex;  
+
+        .notifs
+        {
+            height: $height;
+            width: $height;
+            background-color: $timbreSombre;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            border-radius: $margin - 5;
+            margin-right: $margin;
+
+            i 
+            {
+                color: $white ;
+            }
+        }
+      
+    }
+
+
+
+
+//Section.tsx
+
+.section 
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lighten($color: $timbreSombre, $amount: 0);
+    border-radius: $margin + 10;
+    margin-top: $margin + 40;
+
+    .text
+    {
+
+        padding-left: $padding;
+        h1 
+        {
+            text-align: left;
+            font-size: $height + 20;
+            color: $white;
+        }
+
+        Button 
+        {
+            font: 100% $font;
+            border: none;
+        }
+    }
+
+    .ill 
+    {
+        img 
+        {
+            height: $height * 10 + 100;
+        }
+    }
+}
+
+
+//Realisations.tsx
+
+.Cards
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+   &-Card 
+   {
+      height: 500px;
+      margin: $margin;
+     
+
+      &-img 
+      {
+        height: $height * 7;
+        border-radius: $dim - 10;
+        
+      }
+
+      &-h3 
+      {
+
+      }
+
+      &-p 
+      {
+        width: $height * 8;
+        font: $font2;
+      }
+   }
+
+    
+}
+
+
