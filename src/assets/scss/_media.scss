@@ -1,0 +1,84 @@
+@import 'app'; // Import des variables
+
+$mobile : 703px;
+$mobile1 : 665px;
+$mobile2 : 598px;
+$mobile3 : 510px;
+$mobile4 : 450px;
+
+@media screen and (max-width: $mobile4) {
+    .section 
+    {
+        position: relative;
+        right: -60px;  
+      
+    }
+  
+    .Header {
+      position: relative;
+      right: -60px;
+    }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: $mobile3) {
+    .section 
+    {
+        position: relative;
+        right: -60px;  
+      
+    }
+  
+    .Header {
+      position: relative;
+      right: -60px;
+    }
+}
+
+
+@media screen and (min-width: 510px) and (max-width: $mobile2) {
+    .section 
+    {
+        position: relative;
+        right: -30px;  
+        width: 650px;
+        width: 680px;
+    }
+  
+    .Header {
+      position: relative;
+      right: -30px;
+    }
+}
+
+@media screen and (min-width: 598px) and (max-width: $mobile1) {
+    .section 
+    {
+        position: relative;
+        right: -35px;  
+        width: 675px;
+    }
+  
+    .Header {
+        position: relative;
+        right: -35px;
+    }
+  }
+
+@media screen and (max-width: $mobile) {
+  .section 
+  {
+    position: relative;
+    right: -10px;
+    width: 680px;
+  }
+
+  .Header
+  {
+    position: relative;
+    right: -10px;
+    width: 675px;
+  }
+
+  
+}

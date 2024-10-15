@@ -1,5 +1,6 @@
 import logoImage from '../assets/images/logo.png';
-import '../assets/scss/app.scss';
+import '../assets/scss/_app.scss';
+import '../assets/scss/_media.scss';
 import 'primeicons/primeicons.css';
 import { Avatar } from 'primereact/avatar';
 import { Link } from 'react-router-dom';

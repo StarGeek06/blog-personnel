@@ -1,6 +1,7 @@
-import '../assets/scss/app.scss';
+
 import 'primeicons/primeicons.css';
-import '../assets/scss/app.scss';
+import '../assets/scss/_app.scss';
+import '../assets/scss/_media.scss';
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';  
 import 'primereact/resources/primereact.min.css';  

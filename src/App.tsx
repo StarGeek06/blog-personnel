@@ -1,4 +1,4 @@
-import './assets/scss/app.scss'
+import './assets/scss/_app.scss'
 import Home from './components/Home';
 import { Realisations } from './components/Realisations';
 import Articles from './components/Articles';
